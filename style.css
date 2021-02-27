@@ -52,6 +52,13 @@ body {
   font-size: 1.3rem;
 }
 
+.btn {
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+}
+
 .grabbing {
   cursor: grabbing;
 }
