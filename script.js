@@ -27,7 +27,7 @@ slides.forEach((slide, index) => {
 window.oncontextmenu = function (event) {
   event.preventDefault();
   event.stopPropagation();
-  // return false;
+  return false;
 };
 
 function touchStart(index) {
@@ -76,6 +76,7 @@ function animation() {
 function setSliderPosition() {
   slider.style.transform = `translateX(${currentTranslate}px)`;
 }
+
 function setPositionByIndex() {
   currentTranslate = currentIndex * -window.innerWidth;
   prevTranslate = currentTranslate;
